@@ -1,132 +1,95 @@
 const productos = [
-    { 
-        id: 1, 
-        nombre: "Laptop", 
-        precio: 1500 
-
-    },
-    { 
-        id: 2, 
-        nombre: "Smartphone", 
-        precio: 800 
-
-    },
-    { 
-        id: 3, 
-        nombre: "Tablet", 
-        precio: 500 
-
-    },
-    { 
-        id: 4, 
-        nombre: "Auriculares", 
-        precio: 100 
-
+    {
+        id: 1,
+        nombre: "iPhone 13",
+        precio: 500,
+        cantidad: 1,
     },
     {
-        id: 5, 
-        nombre: "Monitor", 
-        precio: 300 
-        
+        id: 2,
+        nombre: "iPhone 13 Pro",
+        precio: 600,
+        cantidad: 1,
     },
-    { 
-        id: 6, 
-        nombre: "Teclado", 
-        precio: 150 
-
+    {
+        id: 3,
+        nombre: "iPhone 13 Pro Max",
+        precio: 700,
+        cantidad: 1,
     },
-    { 
+    {
+        id: 4,
+        nombre: "iPhone 14",
+        precio: 800,
+        cantidad: 1,
+    },
+    {
+        id: 5,
+        nombre: "iPhone 14 Pro",
+        precio: 900,
+        cantidad: 1,
+    },
+    {
+        id: 6,
+        nombre: "iPhone 14 Pro Max",
+        precio: 1000,
+        cantidad: 1,
+    },
+    {
         id: 7,
-        nombre: "Mouse", 
-        precio: 60 
-
+        nombre: "iPhone 15",
+        precio: 1100,
+        cantidad: 1,
     },
-    { 
-        id: 8, 
-        nombre: "Cargador", 
-        precio: 30 
-
+    {
+        id: 8,
+        nombre: "iPhone 15 Pro",
+        precio: 1200,
+        cantidad: 1,
     },
-    { 
-        id: 9, 
-        nombre: "Impresora", 
-        precio: 250
+    {
+        id: 9,
+        nombre: "iPhone 15 Pro Max",
+        precio: 1300,
+        cantidad: 1,
     },
-    { 
-        id: 10, 
-        nombre: "Router", 
-        precio: 80
-    }
+    {
+        id: 10,
+        nombre: "iPhone 16",
+        precio: 1400,
+        cantidad: 1,
+    },
 ];
 
 let carrito = [];
 
-function mostrarProductos() {
-    let mensaje = "Productos disponibles:\n";
+let productCard = document.getElementById("product-card");
 
-    for (let i = 0; i < productos.length; i++) {
-        mensaje += `${productos[i].id}. ${productos[i].nombre} - $${productos[i].precio}\n`;
-    }
-
-    mensaje += "Ingrese el número del producto que desea agregar al carrito.";
-
-    return mensaje;
+function mostrarProductos(arrayProductos) {
+    arrayProductos.forEach((producto) => {
+        const cards = document.createElement("div");
+        cards.innerHTML = `<img src="img/${producto.id}.jpg" alt="${producto.nombre}">
+                            <h3>${producto.nombre}</h3>
+                            <span>$${producto.precio}</span>
+                            <button class="add-cart" id="${producto.id}">Agregar al carrito</button>`;
+        productCard.appendChild(cards);
+    });
+    agregarAlCarrito();
 }
 
+mostrarProductos(productos);
 
-function agregarAlCarrito(idProducto) {
-
-    let productoEncontrado = null;
-
-    for (let i = 0; i < productos.length; i++) {
-        if (productos[i].id === idProducto) {
-            productoEncontrado = productos[i];
-            break;
-        }
-    }
-
-
-    if (productoEncontrado) {
-        carrito.push(productoEncontrado);
-
-        alert(`${productoEncontrado.nombre} ha sido agregado al carrito.`);
-
-        console.log(`${productoEncontrado.nombre} agregado. Carrito actual:`, carrito);
-    } else {
-        alert("Producto no encontrado.");
-    }
+function agregarAlCarrito() {
+    const botones = document.querySelectorAll(".add-cart");
+    botones.forEach((boton) => {
+        boton.onclick = (e) => {
+            const productoId = e.currentTarget.id;
+            const selectedProduct = productos.find(
+                (producto) => producto.id == productoId
+            );
+            carrito.push(selectedProduct);
+            console.log(carrito);
+            localStorage.setItem("carrito", JSON.stringify(carrito));
+        };
+    });
 }
-
-function calcularTotal() {
-    let total = 0;
-    for (let i = 0; i < carrito.length; i++) {
-        total += carrito[i].precio;
-    }
-
-    if (total > 20000) {
-        const descuento = total * 0.10;
-
-        total -= descuento;
-
-        alert(`Se ha aplicado un descuento de $${descuento}. Total con descuento: $${total}`);
-    }
-
-    alert(`El total de su compra es: $${total}`);
-
-    console.log("Total de la compra:", total);
-
-}
-
-let seguirComprando = true;
-
-while (seguirComprando) {
-
-    const seleccion = parseInt(prompt(mostrarProductos()), 10);
-
-    agregarAlCarrito(seleccion);
-
-    seguirComprando = prompt("¿Desea agregar otro producto? (si/no)").toLowerCase() === "si";
-
-}
-
-calcularTotal();
