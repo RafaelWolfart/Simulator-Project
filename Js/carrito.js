@@ -1,7 +1,7 @@
 let carritoCompra = document.getElementById("carrito-content");
 
-let carritoCargado = localStorage.getItem("carrito") || "[]";
-carritoCargado = JSON.parse(carritoCargado);
+let carritoCargado = JSON.parse(localStorage.getItem("carrito")) || [];
+// carritoCargado = JSON.parse(carritoCargado);
 
 function mostrarCarrito(itemCarrito) {
   itemCarrito.forEach((producto) => {
@@ -30,3 +30,10 @@ eliminarItem.forEach(
 );
 
 console.log(carritoCargado);
+
+const totalCompra = carritoCargado.reduce((acc, item) => acc + item.precio, 0);
+const mostrarTotal = document.createElement("div");
+mostrarTotal.className = "total-compra";
+mostrarTotal.innerHTML = `<h3>Total: $${totalCompra}</h3>
+                        `;
+carritoCompra.appendChild(mostrarTotal);
