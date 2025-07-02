@@ -1,0 +1,40 @@
+.flex-container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 20px 20px;
+    padding: 10px;
+
+}
+
+
+.form {
+    min-width: 200px;
+    max-width: 400px;
+    text-align: center;
+    padding: 30px;
+    flex: 1;
+    order: 5;
+
+    textarea {
+        min-height: 140px;
+        resize: none;
+    }
+
+    input[type="submit"] {
+        background: #0071e3;
+        border: none;
+        padding: 12px;
+        border-radius: 20px;
+    }
+}
+
+.form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: 2px solid #000000;
+    background: transparent;
+    color: #fff;
+}
