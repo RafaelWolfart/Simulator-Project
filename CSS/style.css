@@ -21,7 +21,8 @@ footer {
   padding: 20px 0;
 }
 
-.compra-final {
+.compra-final,
+.vaciar-carrito {
   border-radius: 100px;
   background-color: #0071e3;
   color: #fff;
