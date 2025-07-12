@@ -1,0 +1,38 @@
+[
+  {
+    "id": 1,
+    "nombre": "Airpods",
+    "precio": 130,
+    "imagen": "../img/pngtree-airpods-3rd-generation-wireless-headphones-png-image_6433754.png"
+  },
+  {
+    "id": 2,
+    "nombre": "Airpods Pro",
+    "precio": 200,
+    "imagen": "../img/pngtree-airpods-png-image_7081756.png"
+  },
+  {
+    "id": 3,
+    "nombre": "Mag Safe",
+    "precio": 80,
+    "imagen": "../img/mag-safe.jpeg"
+  },
+  {
+    "id": 4,
+    "nombre": "Cargador 20w",
+    "precio": 50,
+    "imagen": "../img/cargador-20w.png"
+  },
+  {
+    "id": 5,
+    "nombre": "Funda silicona transparente",
+    "precio": 30,
+    "imagen": "../img/MT203-1.jpeg"
+  },
+  {
+    "id": 6,
+    "nombre": "Funda silicona",
+    "precio": 50,
+    "imagen": "../img/fundas-silicona-iphone-15-15-pro-15-pro-max-15-plus-237279066294f9e42a16964312705451-480-0.png"
+  }
+]

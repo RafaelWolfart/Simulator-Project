@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "nombre": "iPhone 13",
+    "precio": 500,
+    "imagen": "../img/iPhone-13.png"
+  },
+  {
+    "id": 2,
+    "nombre": "iPhone 13 Pro",
+    "precio": 600,
+    "imagen": "../img/iPhone-13-Pro.png"
+  },
+  {
+    "id": 3,
+    "nombre": "iPhone 13 Pro Max",
+    "precio": 700,
+    "imagen": "../img/iPhone-13-Pro-Max.png"
+  },
+  {
+    "id": 4,
+    "nombre": "iPhone 14",
+    "precio": 800,
+    "imagen": "../img/iPhone-14.png"
+  },
+  {
+    "id": 5,
+    "nombre": "iPhone 14 Pro",
+    "precio": 900,
+    "imagen": "../img/iPhone-14-Pro.png"
+  },
+  {
+    "id": 6,
+    "nombre": "iPhone 14 Pro Max",
+    "precio": 1000,
+    "imagen": "../img/iPhone-14-Pro-Max.png"
+  },
+  {
+    "id": 7,
+    "nombre": "iPhone 15",
+    "precio": 1100,
+    "imagen": "../img/iPhone-15.png"
+  },
+  {
+    "id": 8,
+    "nombre": "iPhone 15 Pro",
+    "precio": 1200,
+    "imagen": "../img/iPhone-15-Pro.png"
+  },
+  {
+    "id": 9,
+    "nombre": "iPhone 15 Pro Max",
+    "precio": 1300,
+    "imagen": "../img/iPhone-15-Pro-Max.png"
+  },
+  {
+    "id": 10,
+    "nombre": "iPhone 16",
+    "precio": 1400,
+    "imagen": "../img/iPhone-16.png"
+  },
+  {
+    "id": 11,
+    "nombre": "iPhone 16 Pro",
+    "precio": 1500,
+    "imagen": "../img/iPhone-16-Pro.png"
+  },
+  {
+    "id": 12,
+    "nombre": "iPhone 16 Pro Max",
+    "precio": 1600,
+    "imagen": "../img/iPhone-16-Pro-Max.png"
+  }
+]

@@ -1,0 +1,39 @@
+.form-compra {
+    max-width: 680px;
+    margin: 0 auto;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+
+    .inputs {
+        width: 500px;
+        border-radius: 10px;
+        margin: 20px;
+        padding: 10px;
+    }
+
+    .fin-compra {
+        background: #0071e3;
+        border: none;
+        padding: 12px;
+        border-radius: 20px;
+        margin: 10px;
+    }
+
+    .input-corto {
+        max-width: 150px;
+    }
+}
+
+.error {
+    color: #ff2e3f;
+    font-size: 0.9em;
+}
+
+input:invalid {
+    border-color: #ff2e3f;
+}
+
+input:valid {
+    border-color: #4eff2e;
+}

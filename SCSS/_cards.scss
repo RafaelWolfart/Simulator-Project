@@ -1,0 +1,62 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+    gap: 8px;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 0;
+}
+
+.cards-productos {
+    display: flex;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, .1);
+    margin: 5px;
+    padding: 10px;
+    flex-direction: column;
+    flex-wrap: nowrap;
+
+    img {
+        object-fit: cover;
+        max-height: 372px;
+    }
+
+    button {
+        display: inline;
+        border-color: transparent;
+        border-radius: 100px;
+        background-color: #0071e3;
+        color: #fff;
+        padding: 5px;
+        align-self: self-end;
+    }
+
+    .precio {
+        font-weight: 300;
+    }
+}
+
+.cards-compras {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 150px;
+    background-color: #efefefef;
+    border-radius: 10px;
+    margin: 10px;
+
+    .img-compra {
+        height: 100%;
+        width: 20%;
+        object-fit: contain;
+    }
+
+    .eliminar-item {
+        margin: 15px;
+        border-radius: 100px;
+        background-color: #0071e3;
+        color: #fff;
+        padding: 5px;
+        border-color: transparent;
+    }
+}

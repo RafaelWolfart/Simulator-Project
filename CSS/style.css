@@ -72,4 +72,99 @@ footer {
   margin-bottom: 20px;
 }
 
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(235px, 1fr));
+  gap: 8px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 0;
+}
+
+.cards-productos {
+  display: flex;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 5px;
+  padding: 10px;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+.cards-productos img {
+  object-fit: cover;
+  max-height: 372px;
+}
+.cards-productos button {
+  display: inline;
+  border-color: transparent;
+  border-radius: 100px;
+  background-color: #0071e3;
+  color: #fff;
+  padding: 5px;
+  align-self: self-end;
+}
+.cards-productos .precio {
+  font-weight: 300;
+}
+
+.cards-compras {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 150px;
+  background-color: rgba(239, 239, 239, 0.937254902);
+  border-radius: 10px;
+  margin: 10px;
+}
+.cards-compras .img-compra {
+  height: 100%;
+  width: 20%;
+  object-fit: contain;
+}
+.cards-compras .eliminar-item {
+  margin: 15px;
+  border-radius: 100px;
+  background-color: #0071e3;
+  color: #fff;
+  padding: 5px;
+  border-color: transparent;
+}
+
+.form-compra {
+  max-width: 680px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+}
+.form-compra .inputs {
+  width: 500px;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 10px;
+}
+.form-compra .fin-compra {
+  background: #0071e3;
+  border: none;
+  padding: 12px;
+  border-radius: 20px;
+  margin: 10px;
+}
+.form-compra .input-corto {
+  max-width: 150px;
+}
+
+.error {
+  color: #ff2e3f;
+  font-size: 0.9em;
+}
+
+input:invalid {
+  border-color: #ff2e3f;
+}
+
+input:valid {
+  border-color: #4eff2e;
+}
+
 /*# sourceMappingURL=style.css.map */

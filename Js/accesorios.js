@@ -1,20 +1,25 @@
 let carrito = [];
-let products = [];
+let productosAcc = [];
 
-let productCard = document.getElementById("product-card");
+let accCard = document.getElementById("product-card-acc");
 
-fetch("../DB/dataIphone.json")
-  .then((response) => response.json())
+fetch("../DB/dataAccesorios.json")
+  .then((response) => {
+    if (!response.ok) {
+      throw new Error("Error al cargar los datos");
+    }
+    return response.json();
+  })
   .then((data) => {
-    products = data;
-    products.forEach((product) => {
+    productosAcc = data;
+    productosAcc.forEach((product) => {
       const cards = document.createElement("div");
       cards.className = "cards-productos";
       cards.innerHTML = `<img class="img-producto" src="${product.imagen}" alt="${product.nombre}">
                                 <h3>${product.nombre}</h3>
                                 <span class="precio">$${product.precio}</span>
                                 <button class="add-cart" id="${product.id}">Comprar</button>`;
-      productCard.appendChild(cards);
+      accCard.appendChild(cards);
     });
     agregarAlCarrito();
   })
@@ -25,7 +30,7 @@ function agregarAlCarrito() {
   botones.forEach((boton) => {
     boton.onclick = (e) => {
       const productId = e.currentTarget.id;
-      const selectedProduct = products.find(
+      const selectedProduct = productosAcc.find(
         (product) => product.id == productId
       );
       if (carrito) {
