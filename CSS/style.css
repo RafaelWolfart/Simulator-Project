@@ -6,6 +6,9 @@
 }
 
 body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   background-color: #fefefe;
@@ -13,12 +16,14 @@ body {
 
 .container {
   padding-bottom: 20px;
+  flex: 1;
 }
 
 footer {
   background-color: #e3e3e3;
   text-align: center;
   padding: 20px 0;
+  margin-top: auto;
 }
 
 .compra-final,
