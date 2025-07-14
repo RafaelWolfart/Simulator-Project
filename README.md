@@ -27,6 +27,24 @@
 - **Font Awesome** – para íconos visuales.
 - **Toastify JS** – para notificaciones al agregar o eliminar productos.
 
+## 🛠 Cómo instalar en local
+
+Seguí estos pasos para clonar y ejecutar el proyecto en tu máquina:
+
+1. **Cloná este repositorio:**
+
+```bash
+git clone https://github.com/RafaelWolfart/Simulator-Project.git
+```
+
+2. **Entrá a la carpeta del proyecto:**
+
+```bash
+cd simulator-project
+```
+
+3. **Abrí el archivo `index.html` y ejecuta [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) en caso de utilizar Visual Studio Code.**
+
 ## 🤝 Créditos
 
 Este proyecto fue desarrollado con fines educativos como simulador de e-commerce para productos Apple. No tiene fines comerciales ni está afiliado a Apple Inc.
