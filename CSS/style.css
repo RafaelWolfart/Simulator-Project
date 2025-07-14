@@ -61,6 +61,7 @@ footer {
   border: none;
   padding: 12px;
   border-radius: 20px;
+  color: #ffffff;
 }
 
 .form__input {
@@ -69,7 +70,8 @@ footer {
   margin: 6px 0;
   border: 2px solid #000000;
   background: transparent;
-  color: #fff;
+  color: #000000;
+  border-radius: 10px;
 }
 
 .descripcion {

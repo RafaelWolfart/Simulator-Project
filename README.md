@@ -1,8 +1,8 @@
 # Simulator-Project
 
-# 📱 iphoneAR
+# 📱 iPhoneAR
 
-**iphoneAR** es una tienda online ficticia enfocada en la venta de **iPhones** y sus **accesorios** en Argentina. Esta aplicación fue creada como proyecto educativo utilizando tecnologías modernas de desarrollo web.
+**iPhoneAR** es una tienda online ficticia enfocada en la venta de **iPhones** y sus **accesorios** en Argentina. Esta aplicación fue creada como proyecto educativo utilizando tecnologías modernas de desarrollo web.
 
 ---
 
