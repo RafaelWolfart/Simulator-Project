@@ -2,3 +2,19 @@
     line-height: 1.6;
     margin-bottom: 20px;
 }
+
+.img-nosotros {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.usuario-iphone {
+    max-width: 100%;
+    width: 600px;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+    margin-bottom: 15px;
+}
